@@ -23,6 +23,7 @@
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-headroom": "^3.2.1",
     "react-responsive": "^9.0.2",
     "react-spring": "^9.7.2",
     "react-vertical-timeline-component": "^3.6.0",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@iconify/react": "^4.1.1",
+    "@types/react-headroom": "^3.2.0",
     "@types/react-vertical-timeline-component": "^3.3.3",
     "daisyui": "^3.6.1"
   }
