@@ -5,13 +5,12 @@ import { app_development } from "@/assets/icons";
 import GirdImageBox from "@/components/home/GirdImageBox";
 import human from "@/assets/images/human.jpg";
 import ContributionsTable from "@/components/Contributions";
-import { FC } from "react";
 import ProjectPreView from "@/components/home/ProjectPreView";
 
 export default function Home() {
   return (
     <>
-      <section className=" md:flex h-auto  items-center justify-center w-full m-auto pb-5">
+      <section className=" md:flex h-auto overflow-x-hidden  items-center justify-center w-full m-auto pb-5">
         <div className=" w-full md:w-1/2">
           <Image src={human} alt="profile" className="w-full " />
         </div>
@@ -21,11 +20,12 @@ export default function Home() {
           </h4>
           <AnimatedText text="Min Bhone Thant" />
           <p className="mb-3 mt-3 text-lg text-gray-500 md:text-xl dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur. Velit urna amet est sapien etiam. Augue vivamus
-            sapien pellentesque nunc pulvinar malesuada volutpat pulvinar pharetra. Ut a consectetur
-            odio elementum nunc mauris. Enim eros montes pharetra nibh commodo. Adipiscing metus nam
-            leo sapien feugiat vulputate blandit condimentum nunc. Aliquet nisi in netus aliquam
-            lorem nisi tellus elementum. Quis ultricies massa suspendisse nunc nascetur.
+            Possesses the ability to self-learn and continuously improve technical skills,
+            demonstrated through diverse range of self-taught knowledge. Experienced in various
+            programming languages and design tools, showcasing adaptability and versatility.
+            Currently enrolled in NCC computing Diploma program to further education and skills in
+            the IT industry. Seeking opportunities to utilize skills and knowledge to make a
+            positive impact in the field.
           </p>
           <div className="flex items-start self-start mt-2 mx-4 gap-10">
             <Link
@@ -105,14 +105,14 @@ export default function Home() {
 
       {/* End Trending Section  */}
       {/* Start Services Section  */}
-      <section className="  space-y-5 gap-4 w-full md:w-[80%] m-auto flex flex-col items-center justify-center dark:text-darkText text-text px-10 py-5">
+      <section className="  space-y-5 h-auto gap-4 w-full md:w-[80%] m-auto flex flex-col items-center justify-center dark:text-darkText text-text px-10 py-5">
         <p className=" text-center text-3xl font-semibold leading-normal text-gray-900 dark:text-white">
           What Can I do?
         </p>
         <p className="text-center tracking-tighter text-gray-500 md:text-lg dark:text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, obcaecati!
         </p>
-        <div className="flex grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+        <div className="grid md:flex  gap-10 ">
           <GirdImageBox icon={app_development} title={"Web development"} body="I can work" />
           <GirdImageBox icon={app_development} title={"Web development"} body="I can work" />
           <GirdImageBox icon={app_development} title={"Web development"} body="I can work" />
@@ -120,7 +120,7 @@ export default function Home() {
       </section>
       {/* End Services Section  */}
       {/* Start Project Section  */}
-      <section className="w-[80%] m-auto">
+      <section className="w-[80%] m-auto h-auto md:h-screen">
         <div className="flex justify-between items-center mb-4">
           <p className="text-center text-3xl font-semibold leading-normal text-gray-900 dark:text-white">
             Take a look at my recent projects
@@ -129,7 +129,7 @@ export default function Home() {
             Here is what I do
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-5 ">
           <ProjectPreView
             title="Ticket System"
             body="Somethiing"
